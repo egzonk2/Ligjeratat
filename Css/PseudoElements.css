@@ -1,0 +1,23 @@
+#p1::before {
+    content: "the firelord - ";
+    color: red;
+}
+
+#p2:after {
+    content: " - the fire nation";
+}
+
+#p3::first-line {
+    color: red;
+    font-variant: small-caps;
+}
+
+#p3::first-letter {
+    color: green;
+    font-size: 30px;
+}
+
+#p::selection {
+    color: red;
+    background: green;
+}

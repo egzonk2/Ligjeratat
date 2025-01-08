@@ -1,0 +1,14 @@
+body {
+    background-color: blue;
+    background-image: url(imageFr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div {
+    background-image: url(imageFr.jpg);
+    background-repeat: no-repeat;
+    width: 100px;
+
+}

@@ -1,0 +1,71 @@
+#p {
+     font-family: "Sedan SC", serif;
+    font-weight: 400;
+     font-style: normal;
+}
+
+#p1 {
+    font-family:  "Noto Serif Telugu", serif;
+    font-style: italic;
+}
+
+#p2 {
+    font-variant: small-caps;
+}
+
+#p3 {
+    font-weight: bold;
+    }
+
+#p4 {
+    font-size: 4vw;
+}
+
+#p5 {
+    font: bold italic small-caps 10vw georgian;
+    width: 150px;
+}
+
+#p6 { 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2vw;
+    width: 250px;
+}
+
+#p7 {
+    font-family: fantasy, cursive;
+    text-indent: 20px;
+    text-align: justify;
+    height: 250px;
+    width: 350px;
+
+} 
+
+#p8 {
+    color: aqua;
+    direction: rtl;
+}
+
+#p9 {
+    text-indent: 20px;
+}
+
+#p10 {
+    letter-spacing: 5px;
+    word-spacing: 15px;
+}
+
+#p11 {
+    text-decoration: underline;
+}
+
+#p12 {
+    text-transform: capitalize;
+}
+
+#p13 {
+    font-size: 100px;
+    text-shadow: 5px 4px 20px red;
+}

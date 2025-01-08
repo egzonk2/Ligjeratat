@@ -1,0 +1,17 @@
+#cool{
+    border: 20px solid;
+    color: gray;
+    padding: 20px;
+    width: 700px;
+    margin: auto;
+}
+
+#p {
+    color: cyan;
+}
+
+#p1 {  
+    font-size: 35px;
+    color: darkblue;
+    text-transform: capitalize;
+}

@@ -1,0 +1,82 @@
+/*Tabela me border-collapse, border-spacing*/
+#table1,
+.table1 {
+  border: 1px solid black;
+  border-collapse: separate;
+  border-spacing: 10px 10px;
+}
+
+.table1 {
+  padding: 20px;
+  margin: 10px;
+}
+/*Per color te tabelave*/
+#table1 {
+  background-color: rgb(119, 0, 255);
+  width: 400px;
+  height: 40px;
+}
+
+/*Tabela me tekst, text-align, vertical-align*/
+#table2,
+.table2 {
+  margin-top: 50px;
+  border: 1px solid black;
+  width: 400px;
+  height: 40px;
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+}
+/*Tabel vetem nga njera ane me border*/
+#table3,
+.table3 {
+  margin-top: 50px;
+  border-bottom: 1px solid black;
+  width: 400px;
+  height: 40px;
+  border-collapse: collapse;
+}
+
+/*Per me i caktue ngjyra te ndryshme rreshtave qift ose tek*/
+#table2 tr:nth-child(odd) {
+  background-color: #ffacca;
+  color: blue;
+}
+
+/*Table kur te afrohet mausi ndryshon ngjyra*/
+.table2:hover {
+  background-color: rgb(86, 180, 49);
+}
+#table3:hover {
+  background-color: red;
+}
+
+/*Responsive table*/
+
+div {
+  width: 500px;
+  height: 500px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+/*Per te paraqitur nje titull apo nje pershkrim te tabeles*/
+
+#table1 {
+  caption-side: top;
+  empty-cells: hide;
+}
+#table2 {
+  caption-side: bottom;
+  empty-cells: show;
+}
+#table4,
+
+.table4 {
+  margin-top: 50px;
+  border: 1px solid black;
+  width: 400px;
+  height: 40px;
+  border-collapse: collapse;
+}

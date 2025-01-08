@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e</title>
+</head>
+<body>
+    <p id="p1">Prizren</p>
+    <button onclick="ndrroje()">Click</button>
+    <script>
+        function ndrroje()
+        {
+            document.getElementById('p1').innerHTML='Prishtin';
+        }
+    </script>
+    <button onclick="text1(this)">Click2</button>
+    <p onclick="text1(this)">Prizren</p>
+    <script>
+        function text1(para)
+        {
+            para.innerHTML='Prishtin';
+        }
+    </script>
+
+    <p ondblclick="kliko(this)" onclick="kliko2(this)">DoubleClick</p>
+    <script>
+        function kliko(para)
+        {
+            para.innerHTML = 'Click';
+        }
+        function kliko2(pas)
+        {
+            pas.innerHTML ='DoubleCick';
+        }
+    </script>
+
+    <p id="p2">Cheese</p>
+    <button onclick="hide()">Hide</button>
+    <button onclick="show()">Show</button>
+    <script>
+        function hide()
+        {
+            document.getElementById('p2').style.visibility='hidden';
+        }
+        function show()
+        {
+            document.getElementById('p2').style.visibility='visible';
+        }
+    </script>
+
+    <p>OnMouseOver and OnMouseOut</p>
+    <h1 onmouseover="over(this)" onmouseout="out(this)">hellooo!</h1>
+    <script>
+        function over(id1)
+        {
+            id1.innerHTML='Hands Off.'
+            id1.style.color='red'
+        }
+
+        function out(id1)
+        {
+            id1.innerHTML='hellooo!'
+            id1.style.color='black'
+        }
+    </script>
+
+    <h1 onmousedown="down(this)" onmouseup="up(this)">press</h1>
+    <script>
+        function down(id)
+    {
+        id.innerHTML='ok stop';
+        id.style.backgroundcolor='red';
+        id.style.width='200px';
+    }
+    function up(id)
+    {
+        id.innerHTML='press';
+        id.style.backgroundcolor='white';
+        id.style.width='100%';
+    }
+    </script>
+    <br>
+    <br>
+
+
+</body>
+</html>

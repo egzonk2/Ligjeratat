@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e</title>
+</head>
+<body>
+    <h1>DOM</h1>
+    <p id="p1">Prizren</p>
+    <p id="p2"></p>
+
+    <script>
+        //document.getElementById('p1').innerHTML = "Arianit";
+    </script>
+
+    <script>
+        document.getElementsByTagName('p')[1].innerHTML="shkolla";
+        var x = document.getElementById('p1').innerHTML;
+        document.write(x);
+        document.getElementById('p2').innerHTML='Qyteti me i bukur eshte '+ x;
+    </script>
+    <br>
+    <p>Prizreni</p>
+    <p>Prishtina</p>
+    <p id="p3"></p>
+    <script>
+        var y = document.getElementsByTagName('p');
+        document.getElementById('p3').innerHTML='Qyteti me i bukur eshte: '+ y[2].innerHTML;
+    </script>
+    <p class="klasa">Prizreni</p>
+    <p class="klasa">Prishtina</p>
+    <p id="p4"></p>
+    <script>
+        var z = document.getElementsByClassName('klasa');
+        document.getElementById('p4').innerHTML='Qyteti me i bukur eshte ' + z[0].innerHTML;
+    </script>
+    <br>
+
+    <img id="img1" src="yes.png" style="width: 200px; height: 200px;">
+    <button onclick="document.getElementById('img1').scr ='yep.jpg'">click</button>
+    <a id="a1" href="https://www.google.com/">Google</a>
+    <script>
+        document.getElementById('a1').href ='https://www.facebook.com';
+    </script>
+
+
+
+    <p id="para">Arianit</p>
+    <script>
+        document.getElementById('para').style.color='red';
+
+    </script>
+
+    <button onclick="document.getElementById('para').style.fontSize='25px'">click</button>
+
+    <button onclick="foto()">ndrysho foto</button>
+    <script>
+        function foto()
+        {
+            document.getElementById('img1').scr="yes.png"
+            document.getElementById('img1').style.width='100px';
+            document.getElementById('img1').style.heights='100px';
+        }
+    </script>
+
+</body>
+</html>

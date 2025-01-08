@@ -1,0 +1,20 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Definimi i funksionit y = |log2(x)|
+x = np.linspace(0.01, 10, 500)  # Intervali për x (duhet x > 0 për logaritmin)
+y = np.abs(np.log2(x))  # Funksioni logaritmik me bazë 2 dhe marrë vlera absolute
+
+# Krijimi i grafikut
+plt.figure(figsize=(8, 6))
+plt.plot(x, y, label=r"$y = |\log_2(x)|$", color="blue")
+
+# Shtimi i elementeve në grafik
+plt.axhline(y=0, color="black", linestyle="--", alpha=0.7)  # Boshti horizontal
+plt.axvline(x=0, color="black", linestyle="--", alpha=0.7)  # Boshti vertikal
+plt.title(r"Grafiku i funksionit $y = |\log_2(x)|$", fontsize=14)
+plt.xlabel("$x$", fontsize=12)
+plt.ylabel("$y$", fontsize=12)
+plt.grid(alpha=0.3)
+plt.legend(fontsize=12)
+plt.show()

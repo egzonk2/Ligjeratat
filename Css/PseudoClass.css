@@ -1,0 +1,66 @@
+#input1:focus{
+    background-color: rgb(255, 136, 0);
+    font-size: 25px;
+}
+
+#input2:disabled {
+    background: #f00000;
+}
+
+#input2:enabled {
+    background: #ffff00 ;
+}
+
+.input3:checked {
+    height: 30px;
+    width: 30px;
+}
+
+p:first-of-type {
+    background-color: yellow;
+}
+
+p:last-of-type {
+    background-color: yellow;
+}
+
+p:first-child {
+    background-color: red;
+}
+
+p:last-child {
+    background-color: red;
+}
+
+p:empty {
+    width: 100px;
+    height: 20px;
+    background: #ff00ff;
+}
+
+p {
+    color: black;
+}
+
+:not(p) {
+    background-color: lightblue;
+}
+
+p {
+background-color: blue;
+}
+
+:root {
+    background: pink;
+}
+
+:target {
+    border: 20px solid red;
+    background-color: blueviolet;
+}
+
+#body {
+    width: 0%;
+    height: 0%;
+    visibility: hidden;
+}

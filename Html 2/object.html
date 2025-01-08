@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <h2>Javascript Object</h2>
+        <p id="p1"></p>
+
+    <script>
+        
+    var emriLaptopit = "Dell";
+
+    var laptopi = {  emri:'Dell',
+                    modeli:'E7440',
+                    ngjyra:'hiri',
+                    pesha:'2kg'
+                    lloji:  
+                    {
+                        return this.emri +' '+ this.modeli+' '+this.pesha+ ' ' +this.ngjyra;
+                    }
+                }
+        document.write(laptopi+"<br>");
+        console.log(laptopi);
+
+    document.write('Emri i laptopit eshte '+laptopi.emri+'<br>')
+
+    document.getElementById('p1').innerHTML='Emri i laptopit eshte'+ laptopi.emri
+        +laptopi.modeli + '. ngjyra ' + laptopi.ngjyra ;
+
+        dokument.write('Emri i laptopit eshte'+laptopi.emri+'<br>');
+
+        dokument.write()
+
+//Objekti mund te thirret edhe ne keto dy menyra
+document.write('Emri i laptopit eshte '+laptopi.emri+'<br>'); 
+            
+            document.write(laptopi['emri']+"<br>")
+            
+            //shembull tjeter
+        var personi ={	emri:'Arianit',
+                        mbiemri:'Tershnjaku',
+                        vendlindja:'Dragash',
+                        gjatesia:1.75,
+                    }
+                    personi.mosha=25; //Objektit mund te i shtohen edhe veti te reja.
+                    delete personi.gjatesia;
+                document.write('Emri im eshte '+personi.emri+
+            ' Mbiemri im eshte '+personi.mbiemri+ ' mosha ime eshte '+personi.mosha+' vendlindja ime eshte '+personi.vendlindja);
+            document.write("<br>")
+        //Nese deshirojme te e ndryshojme nje veti brenda objektit.
+        
+        personi.mosha= 30;
+
+        document.write("Mosha eshte: "+personi.mosha+"<br>");
+                    
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+
+#ul1 {
+    list-style-type: circle;
+    list-style-position: outside;
+    width: 100px;
+}
+
+#ul2 {
+    list-style-position: inside;
+    width: 100px;
+}
+
+#ul3 {
+    list-style-image: url(car\ af.gif);
+    list-style-position: inside;
+
+}
+
+#ol1 {
+    list-style-type: none;
+}
+
+#ol2 {
+    list-style-type: none;
+    margin: 0%;
+    position: 0%;
+}
+
+#ol3 {
+    list-style: inside upper-roman;
+    width: 100px;
+}
+
+#ol4 {
+    background: rgb(204, 75, 75);
+    padding: 20px;
+}
+
+#ul4 li:hover {
+    background: blue;
+    color: white;
+    margin: 10px;
+}

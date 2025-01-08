@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Vazhdim</title>
+    
+</head>
+<body>
+    <p>AddEventListener()</p>
+    <button id="but1">Click. do it.</button>
+
+    <p id="p1">Shkolla Digjitale</p>
+    <script>
+        document.getElementById("but1").addEventListener("click",
+        function()
+        {
+            document.getElementById("p1").innerHTML = "Prizren";
+        });
+    </script>
+    <br>
+    <br>
+
+    
+	<button id="but2">click this too.</button>
+	<p id='p2'></p>
+	<script>
+		document.getElementById("but2").addEventListener("mouseup", 
+		function(){
+		document.getElementById("p2").innerHTML = "Prizren";
+		});
+	</script>
+	<br>
+	<br>
+    
+    <button onclick="text()">Add the Element, egzon.</button>
+    
+    <br>
+    <br>
+
+    <script>
+        function text()
+        {
+            var x = document.createElement('input');
+            document.body.appendChild(x);
+        }
+    </script>
+
+    <button onclick="text2()">Add the paragraph. now.</button>
+    <div id="div1" style="border: 1px solid black;">
+        <p id="p1">Paragraphi 1</p>
+        <p id="p2">Paragraphi 2</p>
+    </div>
+
+    <script>
+        function text2()
+        {
+            var x = document.getElementById("div1");
+            var para = document.createElement("p");
+            var node = document.createTextNode("new paragraph.");
+            para.appendChild(node);
+            //document.body.appendChild(para);
+            x.appendChild(para);
+        }
+    </script>
+    <br>
+    <br>
+    
+    <p id="para1">Arianit my sworn enemy. (jk)</p>
+    <button onclick="fshihje()">Fshihje</button>
+    <script>
+        function fshihje()
+        {
+            var x = document.getElementById('para1');
+            x.remove();
+        }
+    </script>
+    <br>
+    <br>
+    <button onclick="fshiElement()">Fshihje 1</button>
+    <script>
+        function fshiElement()
+        {
+            var x = document.getElementById('div1');
+            x.removeChild(x.childNodes[0]);
+        }
+    </script>
+
+</body>
+</html>

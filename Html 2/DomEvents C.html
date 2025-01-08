@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e</title>
+</head>
+<body>
+    <p>Detyra 3</p>
+    <a id="a1" href="https://www.google.com/">Google</a>
+
+    <button onclick="ndrysho()">Click</button>
+    <script>
+        function ndrysho()
+    {
+        document.getElementById('a1').href ='https://www.youtube.com';
+    }
+    </script>
+
+    <br>
+
+    <p>Detyra 4</p>
+
+    <p id="p1">Date:</p>
+    <button onclick="Date()">show</button>
+
+    <script>
+        function Date()
+    {
+    }
+    </script>
+
+    <br>
+
+        <p>OnFocus</p>
+        <input type="text" id="imp1" onfocus="input(this)" onblur="input2(this)">
+        <script>
+            function input(x)
+            {
+                x.style.background = 'red';
+                x.style.color = 'blue';
+                x.stylefontsize = '32px';
+            }
+            
+            function input2(x)
+            {
+                x.style.background = 'white';
+                x.style.color = 'black';
+                x.stylefontsize = '16px';
+            }
+    
+    
+        </script>
+
+        <p>OnChange</p>
+        <select id="s1" onchange="select()">
+            <option disabled="disabled">Zgjedh</option>
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes">Nercedes</option>
+            <option value="Volvo">Volvo</option>
+
+
+        </select>
+        
+        <p id="p3"></p>
+        <script>
+            function select()
+            {
+                var x = document.getElementById("s1").value;
+                document.getElementById("p3").innerHTML = "You selected: " + x;
+            }
+        </script>
+        
+        <p>ONINPUT</p>
+        <input type="text" id="input2" oninput="text()">
+        <p id="para"></p>
+        <script>
+            function text()
+            {
+                var x = document.getElementById('input2').value;
+                document.getElementById('para').innerHTML = x;
+            }
+        </script>
+</body>
+</html>

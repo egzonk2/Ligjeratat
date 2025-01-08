@@ -1,0 +1,35 @@
+/* Universal Selector */
+* {
+    color: blueviolet;
+}
+
+/* Tag Selector */
+p {  
+    color: rgb(0, 60, 255);
+ }
+
+ /* Id Selector */
+#p1 {  
+    font-size: 20px;
+    background-color: aqua;
+}
+
+/* Class Selector */
+.para { 
+    font-size: 30px;
+    color: crimson;
+    text-align: center;
+}
+
+/*  Descending Selectors */
+div > p {
+    color: rgb(126, 0, 143);
+    background-color: aqua;
+}
+
+/* Child Selector */
+div > h1 { 
+    color: blueviolet;
+    font-size: 20px;
+    background-color: aqua;
+}

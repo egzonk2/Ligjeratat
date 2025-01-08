@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>SVG me HTML</title>
+	</head>
+	<body>
+		<h1>SVG me HTML</h1>
+		<svg style="border : 1px solid black;width : 200px; height : 200px">
+		<circle 
+		style="cx:100px; cy:100px; r:50px; fill:red; stroke-width:2px; stroke:black">
+		</circle>
+		</svg>
+		<Br></br>
+		<svg style="border:1px solid black; width:200px; height:200px;">
+		<rect  style="width: 200px; height: 200px; fill: rgb(100, 100, 100);stroke-width: 10;strole: rgb(0, 0, 0);"/>
+		</svg>
+		<br></br>
+		<svg style="border:1px solid black; width:200px; height:200px;">
+		<rect style="x:40px; y:40px; rx:10px; ry:10px; width: 100px; height: 100px; fill: rgb(100, 100, 100);stroke-width: 10;stroke: rgb(0, 0, 0);"/>
+		</svg>
+		<br></br>
+		<svg style="width:300px; height:150; border: 1px solid black">
+	<defs>
+		<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+			<stop
+				offset="0%"
+				style="stop-color: rgb(255, 255, 0); stop-opacity: 1"
+				></stop>
+				<stop
+			offset="100%"
+			style="stop-color: rgb(255, 0, 0); stop-opacity: 1"
+			></stop>
+	      </LinearGradient>
+		</defs>
+		<!--				<rect style="width:150px;height:150px;fill:url(#grad1);"></rect-->
+		<ellipse cx="150" cy="75" rx="125" ry="55" fill="url(#grad1)" />
+		<text fill="#ffffff" font-size="45" font-family="Verdana" x="70" y="86">
+		Prizren
+		</text>
+		</svg>
+		</body>
+</html>
